@@ -18,7 +18,10 @@ class OrderingWindow(EasyFrame):
         EasyFrame.__init__(self, title = "Jimmy's Sandwiches | Order Entry Window")
         self.setResizable(False)
 
+        # Stored line items on the receipt
         self.order = []
+
+        # Total of items added to order variable
         self.subtotal = 0
 
         # Top Menu Buttons
@@ -107,10 +110,12 @@ class OrderingWindow(EasyFrame):
 
 
     def addItem(self, item, price):
+        """Adds an item to the receipt and adds the defined price to the subtotal."""
         self.subtotal += price
         self.order.append({"item": item, "price": price})
 
     def itemDesc(self, desc):
+        """Pops up message box with an item description."""
         self.messageBox(title = "Item Description", message = desc)
  
 #Instantiate and pop up the window.
