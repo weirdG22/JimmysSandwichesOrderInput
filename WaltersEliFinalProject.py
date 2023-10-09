@@ -33,26 +33,26 @@ class OrderingWindow(EasyFrame):
 
         # Ham and Cheese Image and Button
         self.loadImage("images/hamAndCheese.gif", 200, 200, 2, 0)
-        self.addButton(text = "Add: Ham and Cheese", row = 3, column = 0, command = lambda: self.addItem("Ham and Cheese", 8))
+        self.addButton(text = "Add: $8 Ham and Cheese", row = 3, column = 0, command = lambda: self.addItem("Ham and Cheese", 8))
         self.addButton(text = "Item Description", row = 3, column = 1, command = lambda: self.itemDesc("Ham, Cheese, Lettuce, Tomato, Mayo"))
 
         # Roast Beef Image and Button
         self.loadImage("images/roastBeef.gif", 200, 200, 2, 2)
-        self.addButton(text = "Add: Roast Beef", row = 3, column = 2, command = lambda: self.addItem("Roast Beef", 7))
+        self.addButton(text = "Add: $7 Roast Beef", row = 3, column = 2, command = lambda: self.addItem("Roast Beef", 7))
         self.addButton(text = "Item Description", row = 3, column = 3, command = lambda: self.itemDesc("Roast Beef, Lettuce, Tomato, Mayo"))
 
         # Italian Image and Button
         self.loadImage("images/italian.gif", 200, 200, 4, 0)
-        self.addButton(text = "Add: Italian", row = 5, column = 0, command = lambda: self.addItem("Italian", 9))
+        self.addButton(text = "Add: $9 Italian", row = 5, column = 0, command = lambda: self.addItem("Italian", 9))
         self.addButton(text = "Item Description", row = 5, column = 1, command = lambda: self.itemDesc("Ham, Salami, Cheese, Onion, Lettuce, Tomato, Mayo"))
 
         # Tuna Image and Button
         self.loadImage("images/tuna.gif", 200, 200, 4, 2)
-        self.addButton(text = "Add: Tuna", row = 5, column = 2, command = lambda: self.addItem("Tuna", 7))
+        self.addButton(text = "Add: $7 Tuna", row = 5, column = 2, command = lambda: self.addItem("Tuna", 7))
         self.addButton(text = "Item Description", row = 5, column = 3, command = lambda: self.itemDesc("Tuna, Lettuce, Tomato, Cucumber"))
 
         # Sandwiches Section
-        self.addLabel(text = "Side Items", row = 6, column = 0)
+        self.addLabel(text = "Side Items - All $2", row = 6, column = 0)
 
         # Sides Buttons
         self.addButton(text = "Add: Regular Chips", row = 7, column = 0, command = lambda: self.addItem("Regular Chips", 2))
@@ -61,7 +61,7 @@ class OrderingWindow(EasyFrame):
         self.addButton(text = "Add: Salt & Vinegar Chips", row = 7, column = 3, command = lambda: self.addItem("Salt & Vinegar Chips", 2))
 
         # Sandwiches Section
-        self.addLabel(text = "Drinks", row = 8, column = 0)
+        self.addLabel(text = "Drinks - All $3", row = 8, column = 0)
 
         # Sides Buttons
         self.addButton(text = "Add: Coke", row = 9, column = 0, command = lambda: self.addItem("Coke", 3))
